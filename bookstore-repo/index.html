@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PageTurner Books</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1>📚 PageTurner Books</h1>
+        <a href="#catalog" class="button">Browse Catalog</a>
+      </nav>
+      <div class="hero-content">
+        <h2>Your next favorite read is here.</h2>
+        <p>Discover new releases, timeless classics, and staff picks curated for every reader.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="catalog" class="section">
+        <h3>Featured Books</h3>
+        <div id="book-grid" class="book-grid"></div>
+      </section>
+
+      <section class="section newsletter">
+        <h3>Join our newsletter</h3>
+        <p>Get monthly recommendations and exclusive discounts.</p>
+        <form id="newsletter-form" novalidate>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="form-message" class="message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">© <span id="year"></span> PageTurner Books</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
